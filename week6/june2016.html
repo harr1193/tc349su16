@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+    <head>
+        <title>The Daily Dribble</title>
+        <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <style type=text/css>
+            body {
+                background-color:#fff;
+                font-family:"Source Sans Pro";
+                font-size:15px;
+                color:#000;
+            }
+            #container {
+                margin:0 auto;
+            }
+            #header {
+                background-color:#000;
+                margin:10px;
+                padding:30px 10px 30px 10px;
+                margin: 0 auto;
+                border-top:2px solid #ccc;
+            }
+            #header h1 {
+                text-align:center;
+                font-family:Questrial;
+                font-size:40px;
+                color:FFF;
+                margin:0;
+                font-weight:normal;
+            }
+            #header h1 strong {
+                color:#FFF;
+            }
+            #header h1 a {
+                color:#FFF;
+                text-decoration:none;
+            }
+            #header h2 {
+                font-size:14px;
+                font-weight:normal;
+                text-align:center;
+                color:#999;
+            }
+            #header ul {
+                margin:20px 0 0 0;
+                padding:0;
+            }
+            #header li {
+                margin:0;
+                padding:0;
+                list-style:none;
+                float:left;
+                background-color:#FFF;
+                border-bottom:1px solid;
+            }
+            #header li a {
+                display:block;
+                padding:7px;
+                color:#000;
+                margin:0 15 0 0;
+                font-size:15px;
+            }
+            #header li a:hover {
+                color:#F00;
+                border-bottom:7px solid #fff;
+                padding:5px 7px 7px 7px;
+            }
+            #header li a em {
+                font-style:normal;
+                text-decoration:underline;
+            }
+            #sidebar {
+                float:right;
+                width:200px;
+                width:154px;
+                margin:0;
+                border-left:1px solid #E8E8EE;
+                height:100px;
+                padding: 0 60px 0 20px;
+                background-color:#FFFBFF;
+                height:1400px;
+                position:relative;
+            }
+            .sidebar-heading {
+                font-family:Source Sans Pro;
+                font-size:30px;
+                color:#000;
+                margin:10px 5px 10px 55px;
+            }
+            ul.submenu {
+                margin:0;
+                padding:0;
+            }
+            .submenu li {
+                margin:0 0 0 55px;
+                padding:0;
+                list-style:none;
+            }
+            .submenu a {
+                display:block;
+                height:13px;
+                padding:7px 7px 7px 15px;
+                margin:1px 0 0 0;
+                color:#F00;
+            }
+            .submenu a:hover {
+                background-color:#fff;
+                padding:7px 7px 7px 15px;
+                color:#000;
+            }
+            .submenu a:focus {
+                background-color:#fff;
+                padding:7px 7px 7px 15px;
+            }
+
+            #content {
+                margin:10px 185px 10px 10px;
+                padding:0 60px 0 0;
+            }
+            #content h1 {
+                font-family:Source Sans Pro;
+                font-size:25px;
+                padding:5px;
+                color:#000;
+            }
+            .heading-border {
+                border-bottom:1px solid #eee;
+            }
+            #content h1 a {
+                color:#000;
+                text-decoration:none;
+                display:block;
+
+            }
+            #content h1 a:hover {
+                color:#444;
+            }
+            #content h2 {
+                font-size:11px;
+                color:#ccc;
+                margin:10px 0 10px 0;
+                padding:;
+            }
+            #content p {
+                padding:5px;
+                line-height:18px;
+            }
+            #content .article_menu {
+                text-align:right;
+                padding:5px;
+                margin:10px 0 20px 0;
+            }
+            #content .article_menu b {
+                float:left;
+                font-weight:normal;
+            }
+            #content .article_menu a {
+                padding:0 0 0 15px;
+                color:#333;
+                text-decoration:none;
+            }
+            #content p a {
+                color:#333;
+                text-decoration:none;
+            }
+            #content p:hover a {
+                border-bottom:1px dotted #000;
+            }
+            #content p:hover a:hover {
+                border-bottom:1px solid #000;
+            }
+            #content .article_menu a:hover {
+                color:#000;
+            }
+            #content ul {
+                margin:0 0 0 15px;
+                padding:0;
+            }
+            #content li {
+                margin:5px 0 5px 0;
+                padding:0 0 5px 20px;
+                list-style:none;
+                color:#999;
+            }
+            #footer {
+                background-color:#FFFBFF;
+                border-top:2px solid #ccc;
+                padding:10px;
+                text-align:center;
+                position: relative;
+                margin-top: -180px;
+                height: 170px;
+                clear:both;
+
+            }
+            a {
+                color:#333;
+                text-decoration:none;
+            }
+            .post-img {
+                float:left;
+                display:block;
+                padding:20px 5px 0px 0;
+                position:relative;
+            }
+            .first-post {
+                margin: 0 0 40px 0;
+                padding:30px 0 0 0;
+                display:block;
+            }
+            .sidebar-top {
+                padding:35px 0 0 0;
+            }
+            .new-post {
+                margin: 0 0 40px 0;
+                padding:20px 0 0 0;
+                display:block;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="header">
+                 <h1><a href="index.html">THE DAILY DRIBBLE</a></h1>
+                 <h2>NBA content and analysis</h2>
+                <ul id="nav">
+                    <li><a href="index.html"><em>H</em>ome</a>
+                    </li>
+                    <li><a href="aboutme.html"><em>A</em>bout Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!--End Header-->
+            <div id="sidebar">
+                <div class="sidebar-top">
+                     <h1 class="sidebar-heading">Archive</h1>
+                     <ul class="submenu">
+                        <li><a href="june2016.html">June 2016</a>
+                        </li>
+                        <li><a href="may2016.html">May 2016</a>
+                        </li>
+
+                    </ul>
+                </div>
+ 
+            </div>
+            <!--End Sidebar-->
+            <div id="content">
+                <div class="first-post">
+                    <a href="http://media.jrn.com/images/2000*1424/NBA+Draft+Basketball_Robe+(4)062316.jpg"><img width="350" height="220" class="post-img" src="http://i.imgur.com/ZbFWcSd.jpg" alt="2016 draft"></a>
+                    <div class="post-content">
+                         <h1>NBA Draft Recap</h1>
+                        <p>With no suprise the top pick in this years draft was the swingman man out of LSU, Ben Simmons, going to the 76ers. Simmons has drawn comparisions to becoming the next Lebron James eventually, which is very high praise.</p><p>Next was Brandon Ingrahm adding to the rebuilding Lakers young core of DeAngelo Russel, Julius Randle, and Jordan Clarkson. Ingrahm will be a great piece for them adding great size and shooting to their SF spot.</p><p>The suprise of the night was the Boston Celtics keeping their pick, which was reportedly being shopped around heavily. The Celtics ened up taking Jaylen Brown with the pick which was also a suprise because it was reported that they were in high on prospect Kris Dunn, who was picked right after the Celtics by the Timberwolves.</p>
+                        <div class="article_menu"> <b>Posted on Friday 24 June 2016</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-post">
+                     <a href="https://pmcdeadline2.files.wordpress.com/2016/06/nba-finals-2016-cleveland-cavaliers.jpg?w=446=299"><img width="353" class="post-img" src="http://i.imgur.com/UBX87Lb.jpg" alt="2016 finals"></a>
+                    <h1>Impact of 2016 Finals on Lebron's Legacy</h1>
+                    <p>Lebron James secured his third championship taking down the best regular season team even and defending champ Golden State Warriors.</p> <p class="new-p">This win was different than the first two though</p>
+                    <p>After the Cavaliers fell down 3-1 it looked like all hope was lost for them and the Warriors would be celebrating winning in Cleavland for the second year in a row. But Lebron and the Cavs came out determined in Game 4 and blew out the Warriors. This was folllowed by amazing back to back 40-point performance by Lebron in Game 5 and 6. Then to secure the championship Lebron dropped a triple double in Game 7.</p><p>Lebron end the series leading both teams in points, assists, rebounds, steal, and block - all while battling back from 3-1 a feat that no team has ever done in the finals. I think it's safe to say you can't question the greatness of Lebron's legacy now.</p>
+                    <div class="article_menu"> <b>Posted on Monday 20 June 2016</b>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                    <p>MI349SU16</p>
+            </div>
+        </div>
+    </body>
+</html>
